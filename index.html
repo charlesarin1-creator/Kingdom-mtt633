@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#8B0000" />
+  <title>Kingdom — Matthew 6:33</title>
+  <meta name="description" content="Seek first the Kingdom of God and His righteousness. A mandate page for Kingdom alignment, discipline, and doctrine." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kingdom — Matthew 6:33" />
+  <meta property="og:description" content="Seek first the Kingdom. Alignment before provision." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.png" />
+
+  <style>
+    :root{
+      --red:#8B0000;         /* covenant red */
+      --char:#111111;        /* authority black */
+      --gold:#C6A14A;        /* antique gold */
+      --bone:#F5F3EE;        /* bone white */
+      --ash:#2A2A2A;
+      --muted:#BEB8AE;
+      --max:1100px;
+      --radius:18px;
+      --shadow: 0 18px 60px rgba(0,0,0,.25);
+      --shadow2: 0 10px 30px rgba(0,0,0,.18);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 700px at 10% 0%, rgba(198,161,74,.12), transparent 55%),
+        radial-gradient(900px 600px at 100% 15%, rgba(139,0,0,.18), transparent 55%),
+        linear-gradient(180deg, #0B0B0B 0%, #131313 40%, #0B0B0B 100%);
+      color: var(--bone);
+      overflow-x:hidden;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:22px}
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:14px 16px;
+      border:1px solid rgba(198,161,74,.18);
+      background: rgba(10,10,10,.55);
+      backdrop-filter: blur(10px);
+      border-radius: 999px;
+      box-shadow: var(--shadow2);
+      position: sticky; top: 12px; z-index: 20;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; min-width: 210px;
+    }
+    .mark{
+      width:38px; height:38px; border-radius: 12px;
+      background: radial-gradient(circle at 30% 30%, rgba(198,161,74,.9), rgba(198,161,74,.15) 55%, rgba(139,0,0,.35));
+      border:1px solid rgba(198,161,74,.35);
+      box-shadow: 0 10px 25px rgba(198,161,74,.08);
+      position:relative;
+    }
+    .mark:after{
+      content:"✝";
+      position:absolute; inset:0;
+      display:grid; place-items:center;
+      font-weight:900; color: rgba(245,243,238,.92);
+      text-shadow: 0 10px 30px rgba(139,0,0,.35);
+      transform: translateY(-1px);
+    }
+    .brand h1{
+      margin:0; line-height:1.05;
+      font-size: 14px; letter-spacing:.12em; text-transform:uppercase;
+    }
+    .brand small{
+      display:block; color: rgba(245,243,238,.72);
+      font-size: 11px; letter-spacing:.08em; margin-top:2px;
+    }
+    .navlinks{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
+    }
+    .btn{
+      appearance:none; border:1px solid rgba(198,161,74,.22);
+      background: rgba(255,255,255,.03);
+      color: var(--bone);
+      padding:10px 12px; border-radius: 999px;
+      font-weight:650; font-size: 12px;
+      letter-spacing:.06em; text-transform:uppercase;
+      cursor:pointer;
+      transition: transform .12s ease, border-color .12s ease, background .12s ease;
+      text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(198,161,74,.45); background: rgba(255,255,255,.06);}
+    .btn.primary{
+      border-color: rgba(139,0,0,.55);
+      background: linear-gradient(180deg, rgba(139,0,0,.95), rgba(88,0,0,.95));
+      box-shadow: 0 12px 35px rgba(139,0,0,.25);
+    }
+    .btn.primary:hover{border-color: rgba(198,161,74,.55)}
+    .hero{
+      padding: 70px 0 26px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 20px;
+      align-items: start;
+    }
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr; padding-top: 34px;}
+      .brand{min-width: unset;}
+    }
+    .panel{
+      border:1px solid rgba(198,161,74,.18);
+      background: rgba(10,10,10,.55);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid rgba(198,161,74,.22);
+      color: rgba(245,243,238,.88);
+      letter-spacing:.14em; text-transform:uppercase;
+      font-weight:800; font-size:11px;
+      background: rgba(255,255,255,.03);
+    }
+    .dot{width:8px; height:8px; border-radius:99px; background: var(--red); box-shadow: 0 0 0 5px rgba(139,0,0,.18);}
+    .title{
+      margin: 14px 0 10px;
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 46px;
+      line-height:1.05;
+      letter-spacing:.02em;
+    }
+    .subtitle{
+      margin:0 0 18px;
+      color: rgba(245,243,238,.78);
+      font-size: 15.5px;
+      line-height:1.65;
+      max-width: 62ch;
+    }
+    .verse{
+      margin-top: 10px;
+      padding: 14px 14px;
+      border-left: 3px solid var(--gold);
+      background: rgba(198,161,74,.06);
+      border-radius: 14px;
+      color: rgba(245,243,238,.9);
+    }
+    .verse b{color: rgba(245,243,238,.98)}
+    .grid{
+      display:grid; grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 16px 0 8px;
+    }
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr;} }
+    .card{
+      border:1px solid rgba(198,161,74,.16);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding: 14px;
+      min-height: 120px;
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size: 13px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color: rgba(245,243,238,.92);
+    }
+    .card p{margin:0; color: rgba(245,243,238,.74); line-height:1.6; font-size: 14px;}
+    .side h2{
+      margin:0 0 10px;
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 22px;
+      letter-spacing:.02em;
+    }
+    .side .list{
+      display:grid; gap:10px;
+    }
+    .pill{
+      display:flex; gap:10px; align-items:flex-start;
+      padding: 12px;
+      border-radius: 16px;
+      border:1px solid rgba(198,161,74,.14);
+      background: rgba(255,255,255,.03);
+    }
+    .num{
+      width:30px; height:30px; border-radius: 10px;
+      display:grid; place-items:center;
+      background: rgba(139,0,0,.35);
+      border:1px solid rgba(139,0,0,.45);
+      color: rgba(245,243,238,.95);
+      font-weight:900;
+    }
+    .pill b{display:block; font-size: 13px; letter-spacing:.1em; text-transform:uppercase;}
+    .pill span{display:block; color: rgba(245,243,238,.72); font-size: 13.5px; line-height:1.45; margin-top:3px;}
+    .section{
+      margin: 18px 0;
+      display:grid; gap:14px;
+    }
+    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px;}
+    .footer{
+      margin: 26px 0 30px;
+      color: rgba(245,243,238,.55);
+      font-size: 12px;
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;}
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(198,161,74,.30), transparent);
+      margin: 18px 0;
+    }
+    .toast{
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      background: rgba(10,10,10,.85);
+      border:1px solid rgba(198,161,74,.22);
+      color: rgba(245,243,238,.9);
+      padding: 10px 12px;
+      border-radius: 999px;
+      box-shadow: var(--shadow2);
+      display:none;
+      max-width: 92vw;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>KINGDOM <small>Matthew 6:33</small></h1>
+        </div>
+      </div>
+
+      <div class="navlinks">
+        <a class="btn" href="#mandate">Mandate</a>
+        <a class="btn" href="#order">Standing Order</a>
+        <a class="btn" href="#practice">Practice</a>
+        <a class="btn primary" href="#join">Join</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="panel">
+          <div class="kicker"><span class="dot"></span> Alignment before provision</div>
+          <h2 class="title">Seek First the Kingdom.</h2>
+          <p class="subtitle">
+            This is not a motivational page. It is a mandate page.
+            The Kingdom is not an idea—it is government. When priority is corrected, provision follows.
+          </p>
+
+          <div class="verse">
+            <b>Matthew 6:33</b> — “But seek first the kingdom of God and His righteousness,
+            and all these things shall be added to you.”
+          </div>
+
+          <div class="grid" id="mandate">
+            <div class="card">
+              <h3>Priority</h3>
+              <p>The Kingdom is the first order, not the last option. A realignment of what governs your decisions.</p>
+            </div>
+            <div class="card">
+              <h3>Righteousness</h3>
+              <p>Not public appearance. Right order. Right practices. Right weight placed on God’s instruction.</p>
+            </div>
+            <div class="card">
+              <h3>Addition</h3>
+              <p>Provision becomes consequence, not pursuit. Added things follow aligned people.</p>
+            </div>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="#join">Make the Covenant</a>
+            <button class="btn" id="copyVerse">Copy Matthew 6:33</button>
+            <a class="btn" href="#practice">Start Practice Plan</a>
+          </div>
+        </div>
+
+        <aside class="panel side" id="order">
+          <h2>The Kingdom Protocol</h2>
+          <div class="list">
+            <div class="pill">
+              <div class="num">1</div>
+              <div>
+                <b>GOVERNMENT</b>
+                <span>The Kingdom is rule. Decide what rules you: appetite, fear, culture—or Christ.</span>
+              </div>
+            </div>
+            <div class="pill">
+              <div class="num">2</div>
+              <div>
+                <b>ORDER</b>
+                <span>Seek first means sequence. Stop negotiating with God at the end of the day.</span>
+              </div>
+            </div>
+            <div class="pill">
+              <div class="num">3</div>
+              <div>
+                <b>FRUIT</b>
+                <span>“Added” is the evidence. Alignment produces outcomes you cannot manufacture.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h2>One-line Hook</h2>
+          <p class="mono" style="margin:0; color:rgba(245,243,238,.78); line-height:1.6;">
+            KINGDOM (Matt 6:33). A call to reorder life under God’s government—priority before provision.
+          </p>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="panel" id="practice">
+          <h2 style="margin:0 0 8px; font-family:ui-serif,Georgia,Times; letter-spacing:.02em;">A 7-Day Practice Plan</h2>
+          <p style="margin:0; color:rgba(245,243,238,.76); line-height:1.65;">
+            Not theory—alignment. Each day is one simple act of Kingdom priority.
+          </p>
+
+          <div class="grid" style="margin-top:14px;">
+            <div class="card"><h3>Day 1</h3><p>Write your current “first.” What receives your best time and attention?</p></div>
+            <div class="card"><h3>Day 2</h3><p>One hour of Scripture + silence. No phone. No noise. Only order.</p></div>
+            <div class="card"><h3>Day 3</h3><p>Righteousness audit: remove one habit that contradicts your confession.</p></div>
+            <div class="card"><h3>Day 4</h3><p>Serve someone quietly. No announcement. Kingdom is humility.</p></div>
+            <div class="card"><h3>Day 5</h3><p>Financial alignment: set aside a seed (giving/saving) with intention.</p></div>
+            <div class="card"><h3>Day 6</h3><p>Restore one relationship: apologize or forgive. Righteousness is repair.</p></div>
+            <div class="card"><h3>Day 7</h3><p>Write a “First Order” statement: what will govern you from today onward?</p></div>
+          </div>
+        </div>
+
+        <div class="panel" id="join">
+          <h2 style="margin:0 0 8px; font-family:ui-serif,Georgia,Times; letter-spacing:.02em;">Kingdom Covenant</h2>
+          <p style="margin:0 0 12px; color:rgba(245,243,238,.76); line-height:1.65;">
+            If you want this page to function as a movement entry point, this covenant becomes the signature line.
+          </p>
+
+          <div class="verse" style="border-left-color: var(--red); background: rgba(139,0,0,.10);">
+            I choose to seek first the Kingdom of God and His righteousness. <br/>
+            I refuse a life governed by fear, appetite, or public approval. <br/>
+            I will reorder my decisions under God’s instruction—priority before provision.
+          </div>
+
+          <div class="ctaRow">
+            <button class="btn primary" id="copyCovenant">Copy Covenant</button>
+            <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">Publish on GitHub Pages</a>
+          </div>
+
+          <p style="margin:12px 0 0; color:rgba(245,243,238,.55); font-size:12px;">
+            Tip: You can replace the “Publish” button link with your WhatsApp or a Google Form later.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>© <span id="year"></span> Kingdom — Matthew 6:33</div>
+        <div class="mono">Built for GitHub Pages • Static • Fast</div>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const toast = (msg) => {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.style.display = 'block';
+      clearTimeout(window.__t);
+      window.__t = setTimeout(() => (t.style.display = 'none'), 2400);
+    };
+
+    const copyText = async (text, okMsg="Copied.") => {
+      try{
+        await navigator.clipboard.writeText(text);
+        toast(okMsg);
+      }catch(e){
+        // fallback
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta);
+        ta.select(); document.execCommand('copy');
+        ta.remove();
+        toast(okMsg);
+      }
+    };
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('copyVerse').addEventListener('click', () => {
+      copyText("Matthew 6:33 — “But seek first the kingdom of God and His righteousness, and all these things shall be added to you.”", "Verse copied.");
+    });
+
+    document.getElementById('copyCovenant').addEventListener('click', () => {
+      copyText(
+`KINGDOM COVENANT
+I choose to seek first the Kingdom of God and His righteousness.
+I refuse a life governed by fear, appetite, or public approval.
+I will reorder my decisions under God’s instruction—priority before provision.`,
+        "Covenant copied."
+      );
+    });
+  </script>
+</body>
+</html>
